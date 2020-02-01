@@ -99,5 +99,52 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script>
+      var inputVal = ".input-group".val
+      var now = moment("HH");
+      if (now.isBefore("10:00")) {
+        $("#9").css("background-color", "#ff6961");
+      } else if (now.isAfter("10:00")){
+        $("#9").css("background-color", "#d3d3d3");
+      }
+      if (now.isBefore("11:00")) {
+        $("#10").css("background-color", "#ff6961");
+      } else if (now.isAfter("11:00")){
+        $("#10").css("background-color", "#d3d3d3");
+      }
+      if (now.isBefore("12:00")) {
+        $("#11").css("background-color", "#ff6961");
+      } else if (now.isAfter("12:00")){
+        $("#11").css("background-color", "#d3d3d3");
+      }
+      if (now.isBefore("13:00")) {
+        $("#12").css("background-color", "#ff6961");
+      } else if (now.isAfter("13:00")){
+        $("#12").css("background-color", "#d3d3d3");
+      }
+      if (now.isBefore("14:00")) {
+        $("#13").css("background-color", "#ff6961");
+      } else if (now.isAfter("140:00")){
+        $("#13").css("background-color", "#d3d3d3");
+      }
+      if (now.isBefore("15:00")) {
+        $("#14").css("background-color", "#ff6961");
+      } else if (now.isAfter("15:00")){
+        $("#14").css("background-color", "#d3d3d3");
+      }
+      if (now.isBefore("16:00")) {
+        $("#15").css("background-color", "#ff6961");
+      } else if (now.isAfter("16:00")){
+        $("#15").css("background-color", "#d3d3d3");
+      }
+      if (now.isBefore("17:00")) {
+        $("#16").css("background-color", "#ff6961");
+      } else if (now.isAfter("17:00")){
+        $("#16").css("background-color", "#d3d3d3");
+      }
+
+      $(".btn").onClick(setItem(inputVal))
+    </script>
   </body>
 </html>
